@@ -13,7 +13,7 @@ def fahrenheit_to_celsius(degrees):
     """Defines a function that converts Fahrenheit to Celsius.
 
     Args:
-        degrees(dec): Degrees in Fahrenheit.
+        degrees (int): Degrees in Fahrenheit.
 
     Returns:
         decimal: Degrees converted to Celsius.
@@ -26,14 +26,14 @@ def fahrenheit_to_celsius(degrees):
         Decimal('0')
     """
 
-return ((decimal.Decimal(degrees) - 32) * 5) / 9
+    return ((decimal.Decimal(degrees) - 32) * 5) / 9
 
 
 def celsius_to_kelvin(degrees):
     """Defines a function that converts Celsius to Kelvin
 
     Args:
-        degrees(dec): Degrees in Celsius.
+        degrees (int): Degrees in Celsius.
 
     Returns:
         decimal: Degrees converted to Kelvin.
@@ -46,15 +46,14 @@ def celsius_to_kelvin(degrees):
         Decimal('273.15')
     """
 
-
-return decimal.Decimal(degrees) + ABSOLUTE_DIFFERENCE
+    return decimal.Decimal(degrees) + ABSOLUTE_DIFFERENCE
 
 
 def fahrenheit_to_kelvin(degrees):
     """Defines a function that converts Fahrenheit to Kelvin
 
     Args:
-        degrees(dec): Degrees in Fahrenheit
+        degrees (int): Degrees in Fahrenheit
 
     Returns:
         decimal: Degrees convertet to Kelvin
@@ -67,4 +66,4 @@ def fahrenheit_to_kelvin(degrees):
         Decimal('273.16')
     """
 
-return celsius_to_kelvin(fahrenheit_to_celsius(degrees))
+    return celsius_to_kelvin(fahrenheit_to_celsius(degrees))
